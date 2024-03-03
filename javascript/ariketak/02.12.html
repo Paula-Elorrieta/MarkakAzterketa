@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamabigarren Scripta</title>
+  </head>
+  <body></body>
+  <script>
+    let NANhizkiak = [
+      "T",
+      "R",
+      "W",
+      "A",
+      "G",
+      "M",
+      "Y",
+      "F",
+      "P",
+      "D",
+      "X",
+      "B",
+      "N",
+      "J",
+      "Z",
+      "S",
+      "Q",
+      "V",
+      "H",
+      "L",
+      "C",
+      "K",
+      "E",
+      "T",
+    ];
+
+    let dnizbk = parseInt(window.prompt("Sartu DNI zenbakiak"));
+    let letra = window.prompt("Sartu DNI LETRA");
+
+    if (dnizbk > 0 && dnizbk < 99999999) {
+      let emaitza = dnizbk % 23;
+
+      let NANletra = NANhizkiak[emaitza];
+      window.alert(NANletra);
+
+      if (letra == NANletra) {
+        window.alert("Ondo dago");
+      } else {
+        window.alert("Zure letra ez da " + letra + " da: " + NANletra);
+      }
+    } else {
+      window.alert("SARTU ZENBAKI BALIDOA");
+    }
+  </script>
+</html>

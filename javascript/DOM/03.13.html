@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13 DOM Ariketa</title>
+  </head>
+  <body>
+    <form name="formularioa">
+      <label for="fname">Idatzi zure izena:</label>
+      <input type="text" name="fname" id="fname" onchange="kopuruAldaketa()" />
+
+      <label for="kopurua">Aldaketa kopurua:</label>
+      <input type="text" name="kopurua" id="kopurua" />
+    </form>
+
+    <script>
+      function kopuruAldaketa() {
+        document.getElementById("kopurua").value++;
+      }
+
+      //let izena = document.getElementById("fname").value;
+      //let hitzak = izena.length;
+      //document.getElementById("kopurua").value = hitzak;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 DOM Ariketa</title>
+</head>
+<body>
+	<form action="">
+		<label for="zenabkia">Zenbakia: </label>
+		<input type="number" name="zenabkia" id="zenabkia"> <br> <br>
+
+		<input type="button" value="Biderkadura taula" onclick="Biderkadura()"> <br>
+		<input type="button" value="Zatiketa taula" onclick="Zatiketa()"> <br> <br>
+
+		<label for="Taula">Taula: </label> <br>
+		<textarea name="Taula" id="Taula" cols="50" rows="20">Hemen idatziko dugu taula</textarea>
+	</form>
+</body>
+<script>
+
+	function Biderkadura() {
+		let zbk = document.getElementById("zenabkia").value;
+		document.getElementById("Taula").value = "";
+
+		for (let i = 1; i < 11; i++) {
+			document.getElementById("Taula").value +=  zbk + " x " + i + " = " + zbk*i + "\n"; 
+		}
+	}
+	
+	function Zatiketa() {
+		let zbk = document.getElementById("zenabkia").value;
+		document.getElementById("Taula").value = "";
+
+		for (let i = 1; i < 11; i++) {
+			let emaitza = zbk / i;
+			document.getElementById("Taula").value += zbk + " x " + i + " = " + emaitza.toFixed(2) + "\n"; 
+		}
+	}
+</script>
+</html>

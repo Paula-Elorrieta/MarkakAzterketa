@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>17 Ariketa</title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+    let esaldia = window.prompt("Sartu esaldi bat");
+
+    document.write(letrak(esaldia));
+
+
+    function letrak(esaldia) {
+      if (esaldia == esaldia.toUpperCase()) {
+        return "Letra larriz osatutako katea da";
+      } else if (esaldia == esaldia.toLowerCase()) {
+        return "Letra xehez osatutako katea da";
+      } else {
+        return "Letra larriz eta xeheak nahastuta daude";
+      }
+    }
+  </script>
+</html>

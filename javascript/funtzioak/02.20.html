@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20 Ariketa</title>
+  </head>
+  <body></body>
+  <script>
+    let zenbakia = parseInt(window.prompt("Sartu zenbaki bat"));
+
+    function LehenZenbaki(zenbakia) {
+      for (let i = 2; i < zenbakia; i++) {
+        if (zenbakia % i == 0) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+    }
+
+    window.alert(LehenZenbaki(zenbakia) ? "Lehena da" : "Ez da lehena");
+
+    //window.alert(LehenZenbaki(zenbakia));
+  </script>
+</html>

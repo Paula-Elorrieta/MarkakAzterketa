@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Ariketa 1</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hasiera</a></li>
+                <li><a href="ariketa1.html">Ariketa 1</a></li>
+                <li><a href="ariketa2.html">Ariketa 2</a></li>
+                <li><a href="ariketa3.html">Ariketa 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- https://www.lawebdelprogramador.com/foros/JavaScript/1652072-extraer-el-valor-de-un-radiobutton.html -->
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Kostea kalkulatu</legend>
+                <table>
+                    <caption>Produktuak eta prezioa</caption>
+                    <thead>
+                        <tr>
+                            <th>Produktua</th>
+                            <th>Prezioa / KG</th>
+                            <th>Hautatu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laranjak</td>
+                            <td>0.75</td>
+                            <td><input type="radio" name="frutak" value="0.75"></td>
+                        </tr>
+                        <tr>
+                            <td>Madariak</td>
+                            <td>1.50</td>
+                            <td><input type="radio" name="frutak" value="1.50"></td>
+                        </tr>
+                        <tr>
+                            <td>Platanoak</td>
+                            <td>2.25</td>
+                            <td><input type="radio" name="frutak" value="2.25"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <label for="A1kopuru">Kopurua:</label>
+                <input type="number" name="A1kopuru" id="A1kopuru" min="1">
+                <br><br>
+                <input id="A1Emaitza" type="button" value="Emaitza">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+    <script src="../js/A1.js"></script>
+</body>
+</html>

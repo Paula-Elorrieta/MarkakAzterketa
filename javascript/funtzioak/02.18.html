@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18 Ariketa</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let esaldia = window.prompt("Sartu esaldi bat");
+
+    // Encuentra con todos los espacios en el string y luego los remplaza por espacios vacios.
+    esaldia = esaldia.replace(/ /g, "");
+    // esaldia = esaldia.replaceAll(" ", "");
+
+    function palindromo(esaldia) {
+        let esaldialower = esaldia.toLowerCase();
+        
+        // split() divide el String en un array, reverse() invierte el array y join() combina los caracteres invertidos en un nuevo String. 
+        let esaldiReverse = esaldialower.split('').reverse().join('');
+
+        if (esaldialower == esaldiReverse) {
+            return "Palindromoa da";
+        }else {
+            return "Ez da palindromoa";
+        }
+
+        
+    }
+
+    window.alert(palindromo(esaldia));
+
+</script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19 Ariketa</title>
+  </head>
+  <body></body>
+  <script>
+    let zenbakia = parseInt(window.prompt("Sartu zenbaki bat"));
+
+    function Alderantziz(zenbakia) {
+      let zebakiRevers = zenbakia.toString();
+      zebakiRevers = zebakiRevers.split("").reverse().join("");
+      return zebakiRevers;
+    }
+
+    window.alert(Alderantziz(zenbakia));
+  </script>
+</html>

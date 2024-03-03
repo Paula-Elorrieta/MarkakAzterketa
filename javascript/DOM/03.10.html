@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 DOM Ariketa</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Taula dinamikoa
+      </caption>
+      <thead>
+        <tr>
+          <th>Zutabe 1</th>
+          <th>Zutabe 2</th>
+          <th>Zutabe 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>1,1 gelaxka</td>
+            <td>1,2 gelaxka</td>
+            <td>1,3 gelaxka</td>
+        </tr>
+        <tr>
+            <td>2,1 gelaxka</td>
+            <td>2,2 gelaxka</td>
+            <td>2,3 gelaxka</td>
+        </tr>
+        <tr>
+            <td>3,1 gelaxka</td>
+            <td>3,2 gelaxka</td>
+            <td>3,3 gelaxka</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button onclick="gehitu()">Sortu</button>
+    <button onclick="ezabatu()">Ezabatu</button>
+
+  </body>
+  <script>
+    function gehitu() {
+
+        let taula = document.getElementsByTagName("table")[0];
+
+        if (taula.tBodies[0]) {
+        }else {
+          taula.createTBody();
+        }
+
+        let lerroa = taula.insertRow();
+
+        let gelaxka = lerroa.insertCell();
+        gelaxka.innerHTML = "z1";
+        gelaxka = lerroa.insertCell();
+        gelaxka.innerHTML = "z2";
+        gelaxka = lerroa.insertCell();
+        gelaxka.innerHTML = "z3";
+
+    }
+
+    function ezabatu() {
+      let taula = document.getElementsByTagName("table")[0];
+      let bodia = taula.tBodies[0];
+      bodia.deleteRow(bodia.rows.length -1);
+    }
+  </script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Ariketa 2</title>
+
+    <style>
+        #taula1, #taula2 {
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hasiera</a></li>
+                <li><a href="ariketa1.html">Ariketa 1</a></li>
+                <li><a href="ariketa2.html">Ariketa 2</a></li>
+                <li><a href="ariketa3.html">Ariketa 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>Bigarren Eskuko arropadendaren kobratze kutxa</legend>
+    
+                <label for="ErosketaZBK">Erosketa Zenbakia:</label>
+                <input type="number" name="ErosketaZBK" id="ErosketaZBK" disabled>
+                <br>
+                <label for="BEZ">BEZ; % </label>
+                <input type="number" name="BEZ" id="BEZ" value="21" disabled>
+                <br>
+                <label for="produktua">Produktua:</label>
+                <select name="produktua" id="produktua">
+                    <option value="15.30" name="produktua">Lepokoa</option>
+                    <option value="10.20" name="produktua">Praka</option>
+                    <option value="15.30" name="produktua">Alkondara</option>
+                    <option value="15.20" name="produktua">Gona</option>
+                    <option value="5.45" name="produktua">Kamiseta</option>
+                    <option value="20.90" name="produktua">Jaka</option>
+                    <option value="15.20" name="produktua">Erlojua</option>
+                    <option value="25.80" name="produktua">Zapatak</option>
+                    <option value="35.30" name="produktua">Berokia</option>
+                    <option value="15.20" name="produktua">Aterkia</option>
+                </select>
+                <label for="kopurua">Kopurua:</label>
+                <input type="number" name="kopurua" id="kopurua" min="1">
+                <br>
+                <input type="button" id="gorde" value="gorde">
+                <br><br>
+                <p>Tiketa:</p> 
+                <table id="taula1">
+                    <thead>
+                        <tr>
+                            <th>Zenbakia:</th>
+                            <th>Produktua:</th>
+                            <th>Salneurria:</th>
+                            <th>Kopurua:</th>
+                            <th>Zenbatekoa:</th>
+                        </tr>
+                    </thead>
+                </table>
+                <table id="taula2">
+                    <thead>
+                        <tr>
+                            <td>BEZ %21</td>
+                            <td>Guztikoa</td>
+                        </tr>
+                    </thead>
+                </table>
+                <br><br>
+                <input type="button" id="faktura" value="Sortu faktura" onclick="fakturaSORTU(zenbatekoa, guztira, BEZA)">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+    <script src="../js/A2.js"></script>
+</body>
+</html>

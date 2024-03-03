@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>16 DOM Ariketa</title>
+  </head>
+  <body>
+    <h1>OINARRIZKO KALKULAGAILUA</h1>
+    <br />
+    <form>
+      <label for="zbk1">Zenbaki 1: </label>
+      <input type="number" name="zbk1" id="zbk1" /> <br />
+
+      <label for="zbk2">Zenbaki 2: </label>
+      <input type="number" name="zbk2" id="zbk2" /> <br />
+
+      <input type="radio" name="operador" id="suma" />
+      <label for="suma">+</label>
+      <input type="radio" name="operador" id="resta" />
+      <label for="resta">-</label>
+      <input type="radio" name="operador" id="multi" />
+      <label for="multi">*</label>
+      <input type="radio" name="operador" id="division" />
+      <label for="division">/</label> <br />
+
+      <input type="button" value="Emaitza" onclick="emaitzaIkus()" />
+      <input type="reset" value="Garbitu" />
+
+      <input type="text" id="emaitza" name="emaitza" />
+    </form>
+
+    <script>
+      function emaitzaIkus() {
+        document.getElementById("emaitza").value = kalku();
+      }
+
+      function kalku() {
+        let zbk1 = parseInt(document.getElementById("zbk1").value);
+        let zbk2 = parseInt(document.getElementById("zbk2").value);
+		let emaitza = 0;
+
+        let botoia = document.getElementsByName("operador");
+
+        if (botoia[0].checked) {
+          emaitza = zbk1 + zbk2;
+        } else if (botoia[1].checked) {
+          emaitza = zbk1 - zbk2;
+        } else if (botoia[2].checked) {
+          emaitza = zbk1 * zbk2;
+        } else {
+          emaitza = zbk1 / zbk2;
+        }
+
+		return emaitza;
+      }
+    </script>
+  </body>
+</html>

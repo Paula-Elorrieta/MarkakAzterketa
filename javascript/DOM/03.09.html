@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09 DOM Ariketa</title>
+  </head>
+  <body>
+    <ul id="lista">
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetuer adipiscing elit</li>
+      <li>Sed mattis enim vitae orci</li>
+      <li>Phasellus libero</li>
+      <li>Maecenas nisl arcu</li>
+    </ul>
+    <input
+      type="button"
+      value="Elementua gehitu bukaeran"
+      onclick="gehituB();"
+    />
+    <input
+      type="button"
+      value="Elementua gehitu hasieran"
+      onclick="gehituH();"
+    />
+    <input
+    type="button"
+    value="Ezabatu azken elementua"
+    onclick="ezabatuB();"
+  />
+  </body>
+  <script>
+    function gehituB() {
+      let liElem = document.createElement("li");
+      let testuElemt = document.createTextNode("Testu berria");
+
+      liElem.appendChild(testuElemt);
+      document.getElementById("lista").appendChild(liElem);
+    }
+
+    function gehituH() {
+      let liElem = document.createElement("li");
+      let testuElemt = document.createTextNode("Testu berria");
+
+      liElem.appendChild(testuElemt);
+      document.getElementById("lista").insertBefore(liElem, document.getElementById("lista").firstChild);
+
+
+      //document.getElementById("lista").insertBefore(liElem, document.getElementById("lista").childNodes[2]);
+
+    }
+
+    function ezabatuB() {
+
+        document.getElementById("lista").removeChild(document.getElementById("lista").lastChild);
+
+    }
+  </script>
+</html>

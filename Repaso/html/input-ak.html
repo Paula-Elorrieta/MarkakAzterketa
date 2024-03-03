@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Errepaso</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hasiera</a></li>
+                <li><a href="ariketa1.html">Ariketa 1</a></li>
+                <li><a href="ariketa2.html">Ariketa 2</a></li>
+                <li><a href="ariketa3.html">Ariketa 3</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+		<form action="#" method="POST">
+			<fieldset>
+				<legend>Kontaktu datuak</legend>
+					<label for="IzenAbizena">Izen Abizena:</label>
+						<input type="text" name="IzenAbizena" id="IzenAbizena" required placeholder="Izen Abizena"> <br>
+					<label for="Emaila">Emaila:</label>
+						<input type="email" name="Emaila" id="Emaila" required placeholder="email@example.com"> <br>
+					<label for="TelfZbk">Telefono zenbakia:</label>
+                        <!-- Bakarrik zenbakiak onartzen ditu, eta bakarrik bederatzi -->
+						<input type="text" name="TelfZbk" id="TelfZbk" pattern="[0-9]" maxlength="9" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required placeholder="123456789"><br>
+					<label for="JaiotzeData">Jaiotze data:</label>
+						<input type="date" name="JaiotzeData" id="JaiotzeData" required max="2005-12-31"><br>
+					<label for="NANZbk">NAN:</label>
+						<input type="text" name="NANZbk" id="NANZbk" required placeholder="12345678A">
+			</fieldset>
+			<fieldset>
+				<legend>Sarrera aukeratu</legend>
+				<label for="SarrerakMota">Aukeratu sarrera mota:</label>
+					<select name="SarrerakMota" id="SarrerakMota">
+						<option value="28">Sen Senra (28€)</option>
+						<option value="18">Chill Mafia (18€)</option>
+						<option value="15">Merina Gris (15€)</option>
+					</select> <br>
+				<label for="Kantitate">Kantitate:</label>
+					<input type="number" name="Kantitate" id="Kantitate" min="0">
+			</fieldset><br>
+			<input type="button" value="EROSI" id="submitBTN">
+		</form>
+	</main>
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

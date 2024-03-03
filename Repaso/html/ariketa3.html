@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Ariketa 3</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hasiera</a></li>
+                <li><a href="ariketa1.html">Ariketa 1</a></li>
+                <li><a href="ariketa2.html">Ariketa 2</a></li>
+                <li><a href="ariketa3.html">Ariketa 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Herrialdeak</legend>
+
+            <label for="herrialde">Herrialdea</label>
+            <select name="herrialde" id="herrialde" onchange="herriAldaketa()">
+                <option value="0" selected>Seleccione...</option>
+                <option value="1">Araba</option>
+                <option value="2">Bizkaia</option>
+                <option value="3">Gipuzkoa</option>
+                <option value="4">Lapurdi</option>
+            </select>
+            <br>
+            <label for="herri">Herria:</label>
+            <select name="herri" id="herri">
+                <option value="-">-</option>
+            </select>
+        </fieldset>
+    </main>
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+    <script src="../js/A3.js"></script> 
+</body>
+</html>

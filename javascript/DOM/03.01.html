@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Ariketa 1</title>
+  </head>
+  <body>
+    <button onclick="OrriaAztertu()">Klikatu botoia web orria zein den aztetzeko</button>
+    <br>
+    <button onclick="BerriaIreki()">Ireki Berria.eus</button>
+    <br>
+    <button onclick="ItxiLehioa()">Itxi lehioa</button>
+  </body>
+  <script>
+
+    function OrriaAztertu(){
+        window.location.href = "https://www.berria.eus/";
+        window.alert(window.location);
+    }
+
+    function BerriaIreki(){
+        window.open("https://www.berria.eus/");
+    }
+
+    function ItxiLehioa() {
+      window.close();
+    }
+  </script>
+</html>

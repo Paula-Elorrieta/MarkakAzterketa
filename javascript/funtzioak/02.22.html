@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22 Ariketa</title>
+  </head>
+  <body></body>
+  <script>
+    let esaldia = prompt("Sartu esaldia: ");
+    let bilatuhitz = prompt("Zein hitza bilatu nahi duzu:");
+    let data = new Date();
+
+
+    function HitzErrepikapen(esaldia, bilatuhitz) {
+      let hitzak = esaldia.split(" ");
+      let kont = 0;
+
+      for (let i = 0; i < hitzak.length; i++) {
+        if (hitzak[i] == bilatuhitz) {
+          kont++;
+        }
+      }
+
+      window.alert(bilatuhitz + " karakterea/katea agertzen den aldi-kopurua: " + kont);
+    }
+
+
+    window.alert("Jatorrizko testua: " + esaldia);
+    window.alert("Testuaren luzera: " + esaldia.length);
+    window.alert("Bilaketa burutu den ordua: " + data.getHours() + ":" + data.getMinutes() + " h");
+    window.alert (bilatuhitz + " karakterearen/katearen 1. posizioa: " + esaldia.indexOf(bilatuhitz) + " da.")
+    HitzErrepikapen(esaldia,bilatuhitz);
+  </script>
+</html>
+
+
+
+
+

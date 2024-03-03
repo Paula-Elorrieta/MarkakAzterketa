@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 ariketa</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let zbkrandom = parseInt(Math.random() * 11);
+    let ausaz = false;
+    console.log(zbkrandom);
+
+    do {
+        
+        let zbk = parseInt(window.prompt("1tik 10ra bitartekoa asmatu zenbakia"));
+
+        if (zbk < zbkrandom) {
+            window.alert ("Zure zenbakia txikiagoa da! Saiatu berriro!");
+        }else if (zbk > zbkrandom) {
+            window.alert ("Zure zenbakia handiagoa da! Saiatu berriro!");
+        }else if (zbk == zbkrandom) {
+            window.alert ("Asmatu duzu! Primerako lana egin duzu! Zorionak!");
+            ausaz = true;
+        }else {
+            window.alert ("Sartu zenbaki bat, mesedez")
+        }
+
+    } while (ausaz == false);
+</script>
+</html>

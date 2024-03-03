@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15 DOM Ariketa</title>
+  </head>
+  <body>
+    <h1>Zirkunferentzia/Zirkulua</h1>
+    <label for="radio"><b>R =</b></label>
+    <input type="number" name="radio" id="radio" placeholder="0" /> <br /><br />
+
+    <input type="radio" name="zirkulua" id="perimetroa" /> Perimetroa
+    <input type="radio" name="zirkulua" id="azalera" /> Azalera <br />
+    <br />
+
+    <input type="button" value="Emaitza" onclick="Kalkulu()" />
+    <input type="text" name="emaitzaText" id="emaitzaText" />
+  </body>
+  <script>
+    function Kalkulu() {
+      let zbk = document.getElementById("radio").value;
+
+      let botoia = document.getElementsByName("zirkulua");
+
+      if (botoia[0].checked) {
+        document.getElementById("emaitzaText").value = 2 * Math.PI * zbk;
+      } else {
+        document.getElementById("emaitzaText").value = Math.PI * zbk * zbk;
+      }
+    }
+  </script>
+</html>

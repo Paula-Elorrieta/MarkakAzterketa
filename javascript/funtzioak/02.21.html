@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21 Ariketa</title>
+  </head>
+  <body></body>
+  <script>
+    let esaldia = window.prompt("Sartu esaldi bat");
+
+    function Errepikapena(esaldia) {
+      let kont;
+
+      for (let i = 0; i < esaldia.length; i++) {
+        kont = 0;
+        for (let j = 0; j < esaldia.length; j++) {
+          if (esaldia.charAt(i) == esaldia.charAt(j)) {
+            kont++;
+          }
+        }
+
+        if (kont == 1) {
+          return esaldia.charAt(i);
+        }
+      }
+    }
+
+    window.alert(Errepikapena(esaldia));
+  </script>
+</html>

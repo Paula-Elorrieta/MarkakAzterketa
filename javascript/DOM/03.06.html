@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06 DOM Ariketa</title>
+  </head>
+  <body>
+    <p
+      onmouseover="this.style.color = 'red'"
+      onmouseout="this.style.color = 'black'"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas a
+      itaque nesciunt animi corrupti suscipit vero fugiat quasi at sint et quae,
+      ipsam possimus, beatae aspernatur non fugit nam!
+    </p>
+    <p
+      onmouseover="this.style.color = 'blue'"
+      onmouseout="this.style.color = 'black'"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas animi
+      similique aut illo cupiditate nisi consectetur voluptatibus molestiae
+      maxime quam ad, corrupti delectus aliquid provident debitis a, error,
+      voluptatem beatae!
+    </p>
+    <p onmouseover="f(this, 'purple')" onmouseout="f(this, 'black')">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente
+      reprehenderit amet blanditiis labore doloremque nobis aliquam, beatae
+      eligendi dignissimos neque aperiam asperiores harum corporis tempore rem
+      soluta id tempora.
+    </p>
+  </body>
+  <script>
+
+    function f(x, kolorea) {
+        x.style.color = kolorea;
+    }
+
+    //ONMOUSELEAVE ES LO MISMO
+
+  </script>
+  <script></script>
+</html>
