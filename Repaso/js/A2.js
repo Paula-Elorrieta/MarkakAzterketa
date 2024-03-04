@@ -54,7 +54,7 @@ document.getElementById("gorde").addEventListener("click", function() {
 
 });
 
-function fakturaSORTU(zenbatekoa, guztira, BEZA) {
+function fakturaSORTU() {
     let taula = document.getElementById("taula2");
     deskontua = BEZA * zenbatekoa;
 
